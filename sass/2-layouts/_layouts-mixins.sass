@@ -1,0 +1,15 @@
+@use '../1-base/base-mixins'
+
+@mixin center-content
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+
+    @include base-mixins.tablet
+        max-width: 740px
+
+    @include base-mixins.laptop
+        max-width: 950px
+
+    @include base-mixins.desktop
+        max-width: 1170px

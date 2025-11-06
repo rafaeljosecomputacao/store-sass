@@ -1,0 +1,78 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+/* Card
+.product-card   
+    position: relative
+    width: 90%
+    padding: 1rem
+    margin-bottom: 1rem   
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 2px solid variables.$secondary-color
+
+    &:last-child
+        margin-bottom: 0
+    
+    @include base-mixins.tablet
+        width: 22.5%
+        margin-bottom: 0
+
+    @include base-mixins.laptop 
+        transition: .5s
+
+        &:hover
+            border-color: variables.$primary-color
+    
+    &-label
+        background-color: variables.$primary-color
+        color: variables.$light-color
+        font-weight: 300
+        position: absolute
+        top: 1rem
+        right: 1rem
+        padding: 6px
+
+        @include base-mixins.tablet
+            font-size: .8rem
+            top: .5rem
+            right: .5rem
+            padding: 4px 
+
+        @include base-mixins.laptop 
+            font-size: 1rem
+            top: 1rem
+            right: 1rem
+            padding: 6px            
+
+    img
+        width: 50%
+        height: 50%
+
+        @include base-mixins.tablet
+            width: 60%
+            height: 60%         
+
+    &-year, &-name, &-price, &-rating
+        margin-bottom: 1rem
+
+    &-year
+        margin-top: 1rem
+        color: variables.$secondary-color
+
+    &-name
+        color: variables.$dark-color
+        font-size: 1.3rem
+
+    &-price
+        color: variables.$primary-color
+        font-size: 1.5rem
+        font-weight: 700
+
+    &-rating
+
+        i
+            color: variables.$dark-color
+            font-size: 1.4rem

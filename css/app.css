@@ -1,3 +1,178 @@
+/* Variables */
+/* General */
+html {
+  font-size: 14px;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Scroolbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #582da8;
+}
+
+/* Responsive */
+/* Section Best Selling Products and Section Sommelier's Choice */
+.products-grid {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+@media (min-width: 768px) {
+  .products-grid {
+    max-width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .products-grid {
+    max-width: 950px;
+  }
+}
+@media (min-width: 1024px) {
+  .products-grid {
+    max-width: 1170px;
+  }
+}
+.products-grid h2 {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .products-grid h2 {
+    text-align: left;
+  }
+}
+.products-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+@media (min-width: 768px) {
+  .products-grid-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Buttons */
+.btn {
+  background-color: #582da8;
+  color: #FFF;
+  border: 2px solid #582da8;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+}
+@media (min-width: 992px) {
+  .btn {
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .btn:hover {
+    background-color: #FFF;
+    color: #582da8;
+  }
+}
+
+/* Card */
+.product-card {
+  position: relative;
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #B9BABC;
+}
+.product-card:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .product-card {
+    width: 22.5%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .product-card {
+    transition: 0.5s;
+  }
+  .product-card:hover {
+    border-color: #582da8;
+  }
+}
+.product-card-label {
+  background-color: #582da8;
+  color: #FFF;
+  font-weight: 300;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 6px;
+}
+@media (min-width: 768px) {
+  .product-card-label {
+    font-size: 0.8rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 4px;
+  }
+}
+@media (min-width: 992px) {
+  .product-card-label {
+    font-size: 1rem;
+    top: 1rem;
+    right: 1rem;
+    padding: 6px;
+  }
+}
+.product-card img {
+  width: 50%;
+  height: 50%;
+}
+@media (min-width: 768px) {
+  .product-card img {
+    width: 60%;
+    height: 60%;
+  }
+}
+.product-card-year, .product-card-name, .product-card-price, .product-card-rating {
+  margin-bottom: 1rem;
+}
+.product-card-year {
+  margin-top: 1rem;
+  color: #B9BABC;
+}
+.product-card-name {
+  color: #333;
+  font-size: 1.3rem;
+}
+.product-card-price {
+  color: #582da8;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.product-card-rating i {
+  color: #333;
+  font-size: 1.4rem;
+}
 
 /*# sourceMappingURL=app.css.map */

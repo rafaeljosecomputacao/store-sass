@@ -1,0 +1,20 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+/* Buttons
+.btn   
+    background-color: variables.$primary-color
+    color: variables.$light-color
+    border: 2px solid variables.$primary-color
+    font-weight: 700
+    text-transform: uppercase  
+    letter-spacing: 1px    
+    padding: 8px 16px
+
+    @include base-mixins.laptop
+        cursor: pointer 
+        transition: .5s
+
+        &:hover
+            background-color: variables.$light-color
+            color: variables.$primary-color
