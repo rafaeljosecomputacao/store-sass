@@ -1,0 +1,68 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+
+/* Section Deal
+.deal-container  
+    background-color: variables.$secondary-color 
+    display: flex
+    flex-direction: column
+    padding: 2rem
+    margin-bottom: 2rem
+
+    @include base-mixins.tablet
+        flex-direction: row  
+        align-items: center
+
+    @include base-mixins.desktop
+        padding: 2rem 8rem  
+
+    &-content
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        span, h3, a, p
+            color: variables.$dark-color
+
+        h3, a
+            font-weight: 700
+
+        h3
+            font-size: 1.8rem
+            text-transform: uppercase
+            margin: 1rem 0 2rem
+
+        p
+            font-size: 1.2rem
+            line-height: 1.4rem
+            text-align: center
+            margin-bottom: 1rem
+
+            @include base-mixins.tablet
+                width: 80%
+
+            @include base-mixins.desktop
+                width: 85%
+
+        a
+            font-size: 1.4rem
+            letter-spacing: 1px
+            margin-top: 1rem
+
+            i
+                font-size: 1.5rem  
+
+    &-image 
+        margin-top: 2rem
+        text-align: center
+
+        @include base-mixins.tablet
+            margin-top: 0
+
+        img
+            width: 60%
+            height: 60% 
+
+            @include base-mixins.tablet      
+                width: 100%
+                height: 100%
