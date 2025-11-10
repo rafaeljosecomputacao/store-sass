@@ -1,0 +1,61 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+/* Footer
+.footer
+    background-color: variables.$secondary-color
+    padding: 2rem 1rem
+    margin-top: 2rem
+
+    @include base-mixins.laptop
+        padding: 2rem 0
+
+    h3, h4, p, a
+        color: variables.$dark-color
+
+    h3
+        font-size: 1.5rem
+        margin-bottom: 1.5rem
+
+    h4
+        font-size: 1.25rem
+        margin: 1.5rem 0
+
+        @include base-mixins.laptop
+            margin: 0 0 1.5rem
+    
+    p, li
+        margin-bottom: 1rem
+
+        &:last-child
+            margin-bottom: 0
+
+    &-top
+        @include layouts-mixins.center-content
+        flex-direction: column
+
+        @include base-mixins.laptop
+            flex-direction: row
+
+        &-about
+
+            p
+                display: flex
+                align-items: center
+
+                i
+                    font-size: 1.25rem
+                    margin-right: 1rem
+
+            @include base-mixins.laptop
+                max-width: 50%
+
+        &-categories, &-information
+
+            @include base-mixins.laptop
+                max-width: 25%
+
+    &-bottom
+        margin-top: 2rem
+        text-align: center
