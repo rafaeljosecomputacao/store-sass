@@ -35,6 +35,36 @@ ul {
 }
 
 /* Responsive */
+/* Main Banner */
+.banner-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+@media (min-width: 768px) {
+  .banner-container {
+    max-width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .banner-container {
+    max-width: 950px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner-container {
+    max-width: 1170px;
+  }
+}
+@media (min-width: 768px) {
+  .banner-container {
+    flex-direction: row;
+  }
+}
+
 /* Section Best Selling Products and Section Sommelier's Choice */
 .products-grid {
   margin: 0 auto;
@@ -312,6 +342,77 @@ ul {
 .footer-bottom {
   margin-top: 2rem;
   text-align: center;
+}
+
+/* Banner */
+.banner {
+  width: 90%;
+  height: 200px;
+  margin-bottom: 1rem;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-size: 100%;
+}
+.banner:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .banner {
+    width: 30%;
+    height: 150px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .banner {
+    height: 200px;
+    transition: 0.5s;
+  }
+  .banner:hover {
+    background-size: 120%;
+  }
+}
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .banner-content {
+    padding: 2rem;
+  }
+}
+.banner-content h2, .banner-content a, .banner-content i {
+  color: #FFF;
+}
+.banner-content a, .banner-content i {
+  font-size: 1.5rem;
+}
+.banner-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.banner-content a {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.banner-content i {
+  margin-left: 1rem;
+}
+
+#banner-1 {
+  background-image: url("../../img/banner-1.jpg");
+}
+
+#banner-2 {
+  background-image: url("../../img/banner-2.jpg");
+}
+
+#banner-3 {
+  background-image: url("../../img/banner-3.jpg");
 }
 
 /* Buttons */
