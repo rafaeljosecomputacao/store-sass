@@ -1,0 +1,162 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+/* Header
+.header
+    background-color: variables.$light-color  
+    color: variables.$dark-color
+    margin-bottom: 1rem
+
+    @include base-mixins.laptop 
+        margin-bottom: 2rem
+
+    &-top
+        display: none
+
+        @include base-mixins.laptop 
+            @include layouts-mixins.center-content
+            padding: 1rem 0
+
+            &-contact, &-account
+                display: flex
+
+                span
+                    display: flex
+                    align-items: center                
+                    margin-right: 1.5rem
+
+                    &:last-child
+                        margin-right: 0
+
+                i
+                    font-size: 1.25rem
+                    margin-right: .5rem
+
+                a
+                    color: variables.$dark-color
+
+    &-middle
+        @include layouts-mixins.center-content
+        flex-direction: column
+        align-items: center
+        padding: 1rem 0
+
+        @include base-mixins.laptop
+            flex-direction: row
+            padding: 2rem 0
+
+        a
+            color: variables.$dark-color
+
+        &-brand
+            font-size: 2.2rem
+            font-weight: 900            
+
+        form
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 100%
+            padding: 1rem 0
+
+            @include base-mixins.laptop
+                width: 50%
+                padding: 0
+
+            input[type="text"]         
+                width: 50%
+                padding: 8px 16px
+                margin-right: 1rem
+                color: variables.$dark-color
+                border: 2px solid variables.$secondary-color
+
+                @include base-mixins.laptop
+                    margin-right: 2rem
+
+            input[type="text"]::placeholder  
+                color: variables.$dark-color
+
+            input[type="text"]:focus
+
+                @include base-mixins.laptop           
+                    border-color: variables.$primary-color
+
+        &-actions
+            display: flex
+
+            &-favorites, &-cart
+                display: flex
+                align-items: center
+
+                i
+                    font-size: 1.5rem
+                    margin-right: .5rem
+
+            &-favorites
+                margin-right: 2rem
+
+                @include base-mixins.laptop
+                    margin-right: 1.5rem
+
+    &-bottom
+        display: flex
+        flex-direction: column
+        padding: 1rem
+
+        @include base-mixins.laptop
+            padding: 0
+
+        &-button
+
+            @include base-mixins.laptop
+                display: none            
+
+            button 
+                background-color: transparent
+                border: none
+
+                i
+                    color: variables.$dark-color
+                    font-size: 2rem
+            
+        &-navbar
+            display: none
+
+            @include base-mixins.laptop
+                display: block
+
+            ul
+                display: flex
+                flex-direction: column
+                padding: 1rem 0 0
+
+                @include base-mixins.laptop   
+                    flex-direction: row     
+                    @include layouts-mixins.center-content     
+                    justify-content: left   
+                    padding: 1rem 0
+
+                li
+                    margin-bottom: .5rem
+
+                    &:last-child
+                        margin-bottom: 0
+
+                    @include base-mixins.laptop
+                        margin-bottom: 0
+                        margin-right: 5rem
+
+                        &:last-child
+                            margin-right: 0
+
+                a
+                    color: variables.$dark-color
+                    font-size: 1.2rem
+
+                    @include base-mixins.laptop            
+                        border-bottom: 2px solid transparent
+                        transition: .5s
+
+                        &:hover
+                           border-color: variables.$primary-color
